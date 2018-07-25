@@ -13,4 +13,4 @@ The full hardware design consists of three boards  that are stacked on top of ea
 
 The **flash-adapter** can be plugged directly onto the **board-adapter** when the **qspimux** isn't needed.
 
-With the **programmer-adapter** a fourth board exists that can be used to plug a SPI flash on a **flash-adapter** board into a programmer with ZIF socket.
+The DIP8 **board-adapter** can be used to plug a SPI flash on a **flash-adapter** board into a programmer with ZIF socket.
