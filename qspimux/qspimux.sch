@@ -1,0 +1,432 @@
+EESchema Schematic File Version 4
+LIBS:qspimux-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mux:TS3A27518ERTWR U101
+U 1 1 5B4D25B2
+P 5300 3300
+F 0 "U101" H 5550 2300 50  0000 C CNN
+F 1 "TS3A27518ERTWR" H 4850 2300 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5350 1250 50  0001 C CNN
+F 3 "" H 5350 1250 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5B4D2614
+P 5300 4300
+F 0 "#PWR0104" H 5300 4050 50  0001 C CNN
+F 1 "GND" H 5305 4127 50  0000 C CNN
+F 2 "" H 5300 4300 50  0001 C CNN
+F 3 "" H 5300 4300 50  0001 C CNN
+	1    5300 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 5000 4650 0    50   ~ 0
+TODO: fix package
+Wire Wire Line
+	4900 4000 4800 4000
+Wire Wire Line
+	4800 4000 4800 3900
+Wire Wire Line
+	4800 3900 4900 3900
+$Comp
+L power:GND #PWR0103
+U 1 1 5B4D288B
+P 4900 4100
+F 0 "#PWR0103" H 4900 3850 50  0001 C CNN
+F 1 "GND" V 4905 3972 50  0000 R CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3900 4800 3900
+Connection ~ 4800 3900
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J101
+U 1 1 5B606BDA
+P 8500 3000
+F 0 "J101" H 8550 3417 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8550 3326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 8500 3000 50  0001 C CNN
+F 3 "~" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2200 7700 2200
+Wire Wire Line
+	7700 3000 8300 3000
+Wire Wire Line
+	7700 2900 8300 2900
+Wire Wire Line
+	7700 2800 8300 2800
+Wire Wire Line
+	9400 2800 8800 2800
+Wire Wire Line
+	9400 2900 8800 2900
+Wire Wire Line
+	9400 3000 8800 3000
+Wire Wire Line
+	9400 3100 8800 3100
+$Comp
+L power:GND #PWR0101
+U 1 1 5B607191
+P 8300 3100
+F 0 "#PWR0101" H 8300 2850 50  0001 C CNN
+F 1 "GND" V 8305 2972 50  0000 R CNN
+F 2 "" H 8300 3100 50  0001 C CNN
+F 3 "" H 8300 3100 50  0001 C CNN
+	1    8300 3100
+	0    1    1    0   
+$EndComp
+Text Label 9400 2800 2    50   ~ 0
+VCC_PROG
+Text Label 7200 2200 0    50   ~ 0
+MUX_SEL
+Text Label 7700 2800 0    50   ~ 0
+~CS_PROG
+Text Label 7700 2900 0    50   ~ 0
+IO1_DO_PROG
+Text Label 9400 3100 2    50   ~ 0
+IO0_DI_PROG
+Text Label 9400 3000 2    50   ~ 0
+CLK_PROG
+Text Label 7700 3000 0    50   ~ 0
+IO2_~WP_PROG
+Text Label 9400 2900 2    50   ~ 0
+IO3_~HOLD_PROG
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J102
+U 1 1 5B60D78F
+P 2200 3300
+F 0 "J102" H 2250 3617 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2250 3526 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_2x04_P1.27mm_Vertical_SMD" H 2200 3300 50  0001 C CNN
+F 3 "~" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J103
+U 1 1 5B60D7DE
+P 8500 4200
+F 0 "J103" H 8550 4517 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8550 4426 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical_SMD" H 8500 4200 50  0001 C CNN
+F 3 "~" H 8500 4200 50  0001 C CNN
+	1    8500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3200 2000 3200
+Wire Wire Line
+	1400 3300 2000 3300
+Wire Wire Line
+	3100 3200 2500 3200
+Wire Wire Line
+	3100 3300 2500 3300
+Wire Wire Line
+	3100 3400 2500 3400
+Wire Wire Line
+	1400 3400 2000 3400
+Wire Wire Line
+	3100 3500 2500 3500
+$Comp
+L power:GND #PWR0102
+U 1 1 5B60E69F
+P 2000 3500
+F 0 "#PWR0102" H 2000 3250 50  0001 C CNN
+F 1 "GND" H 2005 3327 50  0000 C CNN
+F 2 "" H 2000 3500 50  0001 C CNN
+F 3 "" H 2000 3500 50  0001 C CNN
+	1    2000 3500
+	0    1    1    0   
+$EndComp
+Text Label 1400 3200 0    50   ~ 0
+~CS_FLASH
+Text Label 1400 3300 0    50   ~ 0
+IO0_DO_FLASH
+Text Label 1400 3400 0    50   ~ 0
+IO2_~WP_FLASH
+Text Label 3100 3200 2    50   ~ 0
+VCC_FLASH
+Text Label 3100 3400 2    50   ~ 0
+CLK_FLASH
+Text Label 3100 3500 2    50   ~ 0
+IO0_DI_FLASH
+Text Label 3100 3300 2    50   ~ 0
+IO3_~HOLD_FLASH
+Wire Wire Line
+	9400 4100 8800 4100
+Wire Wire Line
+	9400 4200 8800 4200
+Wire Wire Line
+	9400 4300 8800 4300
+Wire Wire Line
+	9400 4400 8800 4400
+Wire Wire Line
+	7700 4100 8300 4100
+Wire Wire Line
+	7700 4200 8300 4200
+Wire Wire Line
+	7700 4300 8300 4300
+$Comp
+L power:GND #PWR0105
+U 1 1 5B617281
+P 8300 4400
+F 0 "#PWR0105" H 8300 4150 50  0001 C CNN
+F 1 "GND" H 8305 4227 50  0000 C CNN
+F 2 "" H 8300 4400 50  0001 C CNN
+F 3 "" H 8300 4400 50  0001 C CNN
+	1    8300 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 1900 7700 1900
+Text Label 7200 1900 0    50   ~ 0
+VCC_FLASH
+Text Label 7700 4100 0    50   ~ 0
+~CS_BOARD
+Text Label 7700 4200 0    50   ~ 0
+IO0_DO_BOARD
+Text Label 7700 4300 0    50   ~ 0
+IO2_~WP_BOARD
+Text Label 9400 4100 2    50   ~ 0
+VCC_BOARD
+Text Label 9400 4300 2    50   ~ 0
+CLK_BOARD
+Text Label 9400 4400 2    50   ~ 0
+IO0_DI_BOARD
+Text Label 9400 4200 2    50   ~ 0
+IO3_~HOLD_BOARD
+Wire Wire Line
+	4300 2700 4900 2700
+Wire Wire Line
+	4300 3100 4900 3100
+Wire Wire Line
+	4300 3500 4900 3500
+Text Label 4300 2700 0    50   ~ 0
+~CS_FLASH
+Text Label 4300 3100 0    50   ~ 0
+IO0_DO_FLASH
+Text Label 4300 3500 0    50   ~ 0
+IO2_~WP_FLASH
+Wire Wire Line
+	4300 2900 4900 2900
+Wire Wire Line
+	4300 3300 4900 3300
+Wire Wire Line
+	4300 3700 4900 3700
+Text Label 4300 3300 0    50   ~ 0
+CLK_FLASH
+Text Label 4300 3700 0    50   ~ 0
+IO0_DI_FLASH
+Text Label 4300 2900 0    50   ~ 0
+IO3_~HOLD_FLASH
+Wire Wire Line
+	6300 3500 5700 3500
+Wire Wire Line
+	6300 3100 5700 3100
+Wire Wire Line
+	6300 2700 5700 2700
+Text Label 6300 2700 2    50   ~ 0
+~CS_PROG
+Text Label 6300 3100 2    50   ~ 0
+IO1_DO_PROG
+Text Label 6300 3500 2    50   ~ 0
+IO2_~WP_PROG
+Wire Wire Line
+	6300 2900 5700 2900
+Wire Wire Line
+	6300 3300 5700 3300
+Wire Wire Line
+	6300 3700 5700 3700
+Text Label 6300 3700 2    50   ~ 0
+IO0_DI_PROG
+Text Label 6300 3300 2    50   ~ 0
+CLK_PROG
+Text Label 6300 2900 2    50   ~ 0
+IO3_~HOLD_PROG
+Wire Wire Line
+	6300 2800 5700 2800
+Wire Wire Line
+	6300 3200 5700 3200
+Wire Wire Line
+	6300 3600 5700 3600
+Text Label 6300 2800 2    50   ~ 0
+~CS_BOARD
+Text Label 6300 3200 2    50   ~ 0
+IO0_DO_BOARD
+Text Label 6300 3600 2    50   ~ 0
+IO2_~WP_BOARD
+Wire Wire Line
+	6300 3000 5700 3000
+Wire Wire Line
+	6300 3400 5700 3400
+Wire Wire Line
+	6300 3800 5700 3800
+Text Label 6300 3400 2    50   ~ 0
+CLK_BOARD
+Text Label 6300 3800 2    50   ~ 0
+IO0_DI_BOARD
+Text Label 6300 3000 2    50   ~ 0
+IO3_~HOLD_BOARD
+Wire Wire Line
+	2800 5300 2300 5300
+Text Label 2800 5300 2    50   ~ 0
+VCC_FLASH
+Wire Wire Line
+	1400 6100 1900 6100
+Text Label 1400 6100 0    50   ~ 0
+VCC_PROG
+Wire Wire Line
+	1400 5300 1900 5300
+Text Label 1400 5300 0    50   ~ 0
+VCC_BOARD
+Text Label 4300 3900 0    50   ~ 0
+MUX_SEL
+$Comp
+L Device:R R101
+U 1 1 5B6B5372
+P 7700 2050
+F 0 "R101" H 7770 2096 50  0000 L CNN
+F 1 "4k7" H 7770 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7630 2050 50  0001 C CNN
+F 3 "~" H 7700 2050 50  0001 C CNN
+	1    7700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2500 5300 2500
+Text Label 4800 2500 0    50   ~ 0
+VCC_FLASH
+Wire Wire Line
+	7700 3200 8300 3200
+Text Label 7700 3200 0    50   ~ 0
+MUX_SEL
+Wire Wire Line
+	9400 3200 8800 3200
+Text Label 9400 3200 2    50   ~ 0
+VCC_BOARD
+Text Notes 9500 3200 0    50   ~ 0
+board voltage sense pin
+Text Notes 7300 3400 0    50   ~ 0
+MUX_SEL:\n1: board<->flash\n0: prog<->flash
+$Comp
+L Device:C C101
+U 1 1 5B6EA565
+P 4300 6150
+F 0 "C101" H 4415 6196 50  0000 L CNN
+F 1 "100n" H 4415 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4338 6000 50  0001 C CNN
+F 3 "~" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6000 4300 6000
+Text Label 3800 6000 0    50   ~ 0
+VCC_FLASH
+$Comp
+L power:GND #PWR0107
+U 1 1 5B6ED428
+P 4300 6300
+F 0 "#PWR0107" H 4300 6050 50  0001 C CNN
+F 1 "GND" H 4305 6127 50  0000 C CNN
+F 2 "" H 4300 6300 50  0001 C CNN
+F 3 "" H 4300 6300 50  0001 C CNN
+	1    4300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:PMV50XP Q101
+U 1 1 5B7249B6
+P 2100 5400
+F 0 "Q101" V 2443 5400 50  0000 C CNN
+F 1 "PMV50XP" V 2352 5400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 5325 50  0001 L CIN
+F 3 "" H 2100 5400 50  0001 L CNN
+	1    2100 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5B72A64D
+P 2100 5600
+F 0 "#PWR0106" H 2100 5350 50  0001 C CNN
+F 1 "GND" H 2105 5427 50  0000 C CNN
+F 2 "" H 2100 5600 50  0001 C CNN
+F 3 "" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:PMV50XP Q102
+U 1 1 5B72A666
+P 2100 6200
+F 0 "Q102" V 2443 6200 50  0000 C CNN
+F 1 "PMV50XP" V 2352 6200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 6125 50  0001 L CIN
+F 3 "" H 2100 6200 50  0001 L CNN
+	1    2100 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5B72A698
+P 2100 6900
+F 0 "#PWR0108" H 2100 6650 50  0001 C CNN
+F 1 "GND" H 2105 6727 50  0000 C CNN
+F 2 "" H 2100 6900 50  0001 C CNN
+F 3 "" H 2100 6900 50  0001 C CNN
+	1    2100 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6100 2300 6100
+Text Label 2800 6100 2    50   ~ 0
+VCC_FLASH
+$Comp
+L Device:R R102
+U 1 1 5B7307D7
+P 2100 6750
+F 0 "R102" H 2170 6796 50  0000 L CNN
+F 1 "4k7" H 2170 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 6750 50  0001 C CNN
+F 3 "~" H 2100 6750 50  0001 C CNN
+	1    2100 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6500 2100 6500
+Wire Wire Line
+	2100 6400 2100 6500
+Wire Wire Line
+	2100 6600 2100 6500
+Connection ~ 2100 6500
+Text Label 1400 6500 0    50   ~ 0
+VCC_BOARD
+Text Notes 1400 6400 0    50   ~ 0
+add 0 ohm resistor in vcc board line to q102?
+Text Notes 8000 2100 0    50   ~ 0
+connect flash to board if\nproggrammer is unconnected
+Text Notes 1100 1400 0    50   ~ 0
+assumption: VCC_BOARD is about the same as VCC_PROG an both are between 1.8V and 3.3v
+$EndSCHEMATC
