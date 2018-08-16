@@ -115,24 +115,24 @@ IO3_~HOLD_PROG
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J102
 U 1 1 5B60D78F
-P 2200 3300
-F 0 "J102" H 2250 3617 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 2250 3526 50  0000 C CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_2x04_P1.27mm_Vertical_SMD" H 2200 3300 50  0001 C CNN
-F 3 "~" H 2200 3300 50  0001 C CNN
-	1    2200 3300
-	1    0    0    -1  
+P 2300 3300
+F 0 "J102" H 2350 3617 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2350 3526 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_2x04_P1.27mm_Vertical_SMD" H 2300 3300 50  0001 C CNN
+F 3 "~" H 2300 3300 50  0001 C CNN
+	1    2300 3300
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J103
 U 1 1 5B60D7DE
-P 8500 4200
-F 0 "J103" H 8550 4517 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 8550 4426 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical_SMD" H 8500 4200 50  0001 C CNN
-F 3 "~" H 8500 4200 50  0001 C CNN
-	1    8500 4200
-	1    0    0    -1  
+P 8600 4200
+F 0 "J103" H 8650 4517 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8650 4426 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical_SMD" H 8600 4200 50  0001 C CNN
+F 3 "~" H 8600 4200 50  0001 C CNN
+	1    8600 4200
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 3200 2000 3200
