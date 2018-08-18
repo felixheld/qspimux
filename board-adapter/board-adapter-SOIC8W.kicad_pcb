@@ -117,7 +117,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B7504BE) (tstamp 5B781B17)
-    (at 103 99.365)
+    (at 104 99.365)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750BA4)
@@ -137,7 +137,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B750488) (tstamp 5B781A60)
-    (at 103 101.905)
+    (at 104 101.905)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750B28)
@@ -157,7 +157,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B750467) (tstamp 5B7819B2)
-    (at 103 100.635)
+    (at 104 100.635)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750B88)
@@ -177,7 +177,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B750382) (tstamp 5B781989)
-    (at 97 100.635)
+    (at 96 100.635)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750AFA)
@@ -197,7 +197,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B7502FB) (tstamp 5B781917)
-    (at 97 101.905)
+    (at 96 101.905)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750B10)
@@ -217,7 +217,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B7501B0) (tstamp 5B78181C)
-    (at 97 99.365)
+    (at 96 99.365)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750AE4)
@@ -237,7 +237,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B750189) (tstamp 5B780F61)
-    (at 97 98.095)
+    (at 96 98.095)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B7501C7)
@@ -257,7 +257,7 @@
   )
 
   (module Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical (layer F.Cu) (tedit 5B750161) (tstamp 5B78171A)
-    (at 103 98.095)
+    (at 104 98.095)
     (descr "Through hole straight pin header, 1x01, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x01 1.27mm single row")
     (path /5B750BC2)
@@ -354,18 +354,18 @@
     )
   )
 
-  (gr_line (start 97 103) (end 97 97) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 103 103) (end 97 103) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 103 97) (end 103 103) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 97 97) (end 103 97) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 96 103) (end 96 97) (layer Edge.Cuts) (width 0.1) (tstamp 5B77BEBD))
+  (gr_line (start 104 103) (end 96 103) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 104 97) (end 104 103) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 96 97) (end 104 97) (layer Edge.Cuts) (width 0.1))
 
-  (segment (start 97 101.905) (end 98.2 101.905) (width 0.25) (layer F.Cu) (net 1))
-  (segment (start 97 98.095) (end 98.2 98.095) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 101.8 98.095) (end 103 98.095) (width 0.25) (layer F.Cu) (net 3))
-  (segment (start 97 99.365) (end 98.2 99.365) (width 0.25) (layer F.Cu) (net 4))
-  (segment (start 101.8 99.365) (end 103 99.365) (width 0.25) (layer F.Cu) (net 5))
-  (segment (start 103 100.635) (end 101.8 100.635) (width 0.25) (layer F.Cu) (net 6))
-  (segment (start 98.2 100.635) (end 97 100.635) (width 0.25) (layer F.Cu) (net 7))
-  (segment (start 103 101.905) (end 101.8 101.905) (width 0.25) (layer F.Cu) (net 8))
+  (segment (start 96 101.905) (end 98.2 101.905) (width 0.25) (layer F.Cu) (net 1))
+  (segment (start 96 98.095) (end 98.2 98.095) (width 0.25) (layer F.Cu) (net 2))
+  (segment (start 101.8 98.095) (end 104 98.095) (width 0.25) (layer F.Cu) (net 3))
+  (segment (start 96 99.365) (end 98.2 99.365) (width 0.25) (layer F.Cu) (net 4))
+  (segment (start 104 99.365) (end 101.8 99.365) (width 0.25) (layer F.Cu) (net 5))
+  (segment (start 101.8 100.635) (end 104 100.635) (width 0.25) (layer F.Cu) (net 6))
+  (segment (start 96 100.635) (end 98.2 100.635) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 104 101.905) (end 101.8 101.905) (width 0.25) (layer F.Cu) (net 8))
 
 )
