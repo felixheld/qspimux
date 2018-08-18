@@ -36,8 +36,6 @@ F 3 "" H 5300 4300 50  0001 C CNN
 	1    5300 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 5000 4650 0    50   ~ 0
-TODO: fix package
 Wire Wire Line
 	4900 4000 4800 4000
 Wire Wire Line
