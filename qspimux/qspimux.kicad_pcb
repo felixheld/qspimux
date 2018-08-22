@@ -707,8 +707,8 @@
     )
   )
 
-  (module Fiducial:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B7CC6E3) (tstamp 5B7D0D24)
-    (at 91.825 87.325)
+  (module Fiducial:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 5B7CC6E3) (tstamp 5B7D5492)
+    (at 91.875 87.375)
     (descr "Circular Fiducial, 0.5mm bare copper top; 1mm keepout (Level C)")
     (tags marker)
     (attr virtual)
