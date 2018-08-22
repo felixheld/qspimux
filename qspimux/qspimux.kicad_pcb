@@ -62,7 +62,7 @@
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
@@ -84,9 +84,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "../gerber/qspimux/"))
   )
 
   (net 0 "")
@@ -1072,7 +1072,7 @@
   (segment (start 111.095 90.25) (end 110.95 90.395) (width 0.25) (layer B.Cu) (net 23))
   (segment (start 111.825 90.25) (end 111.095 90.25) (width 0.25) (layer B.Cu) (net 23))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5B7D565B) (hatch edge 0.508)
     (connect_pads (clearance 0.15))
     (min_thickness 0.15)
     (fill yes (arc_segments 16) (thermal_gap 0.15) (thermal_bridge_width 0.2))
@@ -1254,7 +1254,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5B728130) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5B7D5658) (hatch edge 0.508)
     (connect_pads (clearance 0.15))
     (min_thickness 0.15)
     (fill yes (arc_segments 16) (thermal_gap 0.15) (thermal_bridge_width 0.2))

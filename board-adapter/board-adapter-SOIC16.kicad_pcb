@@ -86,7 +86,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "../gerber/board-adapter/SOIC16/"))
   )
 
   (net 0 "")
