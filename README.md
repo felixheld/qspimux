@@ -14,7 +14,7 @@ The **flash-adapter** can be plugged directly onto the **board-adapter** when th
 
 The DIP8 **board-adapter** can be used to plug a SPI flash on a **flash-adapter** board into a programmer with ZIF socket.
 
-## howto setup the hardware
+## how to setup the hardware
 
 * If applicable, remove the flash from the mainboard; usually this works best when using a hot air rework station.
 * Solder the board adapter onto the footprint of the SPI flash on the board and then solder a 2x4 socket on the board.
@@ -24,5 +24,7 @@ The DIP8 **board-adapter** can be used to plug a SPI flash on a **flash-adapter*
 * Plug the qspimux PCB in the socket on the board adapter. Also make sure that you plug the board onto the mainboard in the right orientation; for the 8 pin footprints pin 1 needs to point to the top left, for the 16 pin one pin 1 needs to point to the top right.
 * fix the cable(s) to the programmer, so that you don't accidentally rip the qspimux from the mainboard it is connected to.
 * Use the qspimux setup :)
+
+If the setup doesn't work as expected, please try to plug the flash adapter directly onto the board adapter and see if that works. Since the boards adapters in the first batch (v1.0) should have been a bit less wide and the diameter of the castellated holes in rather small, soldering the board adapter onto the board might be a bit difficult and the cause of a not correctly working setup.
 
 If you wonder about the weird pin numbering in the schematics: KiCad didn't have symbols/footprints with the right numbering and I just connected everything in the way that the footprints match to the flash pinout.
