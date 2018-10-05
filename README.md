@@ -27,4 +27,6 @@ The DIP8 **board-adapter** can be used to plug a SPI flash on a **flash-adapter*
 
 If the setup doesn't work as expected, please try to plug the flash adapter directly onto the board adapter and see if that works. Since the boards adapters in the first batch (v1.0) should have been a bit less wide and the diameter of the castellated holes in rather small, soldering the board adapter onto the board might be a bit difficult and the cause of a not correctly working setup.
 
+The two pin footprint on the flash adapter boards are for an optional capacitor near the flash chip. This capacitor is usually not needed, but in the case of a badly designed flash chip power supply on the target mainboard it might help to get the flash chip working reliable.
+
 If you wonder about the weird pin numbering in the schematics: KiCad didn't have symbols/footprints with the right numbering and I just connected everything in the way that the footprints match to the flash pinout.
