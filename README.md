@@ -1,8 +1,10 @@
 # qspimux - a quad SPI NOR flash multiplexer
 
-For both continious integration systems and initial development of bootloaders and firmware images while being off-site, it is necessary to either replace the commonly used (quad) SPI NOR flash of the system with an expensive SPI flash emulator or attach a programmer to the flash chip and hope the programmer and the device won't damage each other.
+For both continious integration systems and initial development of bootloaders and firmware images while being off-site, it is necessary to either replace the commonly used (quad) SPI NOR flash of the system with an expensive SPI flash emulator or attach a programmer to the flash chip and hope the programmer and the device won't interfere.
+The latter is usually a bad idea as it might cause damage to both the target and the programmer and at the time of writing this getting a SPI NOR flash emulator is rather expensive; especially if you want to run tests on multiple targets and need one emulator per target for that.
 
-This project is loosely based on the idea behind lynxis' [spisolator2](https://github.com/lynxis/spisolator2) that is based on [urjaman's spisolator]( https://github.com/urjaman/spisolator).
+This project takes a different approach and is loosely based on the idea behind lynxis' [spisolator2](https://github.com/lynxis/spisolator2) that is based on [urjaman's spisolator]( https://github.com/urjaman/spisolator).
+Here the flash doesn't get emulated, but the access to a real SPI NOR flash chip gets multiplexed between the target and a programmer that also controls the multiplexer. Since today's NOR flashes are quite robust and the programmer should verify the flash contents after writing a new image, I don't expect flash-wearout-related problems to become a major issue. It might however be good idea to count the number of rewrites to be able to replace the flash chip before reaching the number of writes the manufacturer assures the flash to be still good after.
 
 The full hardware design consists of three boards  that are stacked on top of each other:
 
