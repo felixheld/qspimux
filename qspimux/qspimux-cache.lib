@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_02x04_Odd_Even
+# Connector_Generic_Conn_02x04_Odd_Even
 #
-DEF Connector_Generic:Conn_02x04_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Generic:Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -32,11 +32,11 @@ X Pin_8 8 300 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x05_Odd_Even
+# Connector_Generic_Conn_02x05_Odd_Even
 #
-DEF Connector_Generic:Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic:Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -67,15 +67,15 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:C_*
+ C_*
 $ENDFPLIST
 DRAW
 P 2 0 1 20 -80 -30 80 -30 N
@@ -85,15 +85,15 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- *:R_*
+ R_*
 $ENDFPLIST
 DRAW
 S -40 -100 40 100 0 1 10 N
@@ -102,11 +102,30 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mux:TS3A27518ERTWR
+# MAX40200_MAX40200AUK
 #
-DEF Mux:TS3A27518ERTWR U 0 40 Y Y 1 F N
+DEF MAX40200_MAX40200AUK U 0 40 Y Y 1 F N
+F0 "U" 150 -150 50 H V C CNN
+F1 "MAX40200_MAX40200AUK" 0 350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Package_TO_SOT_SMD:SOT-23-5
+$ENDFPLIST
+DRAW
+S -200 300 200 -100 0 1 0 f
+X VDD 1 -300 200 100 R 50 50 1 1 W
+X GND 2 0 -200 100 U 50 50 1 1 W
+X EN 3 -300 100 100 R 50 50 1 1 I
+X OUT 5 300 200 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Mux_TS3A27518ERTWR
+#
+DEF Mux_TS3A27518ERTWR U 0 40 Y Y 1 F N
 F0 "U" -300 -950 50 H V C CNN
-F1 "Mux:TS3A27518ERTWR" 400 -950 50 H V C CNN
+F1 "Mux_TS3A27518ERTWR" 400 -950 50 H V C CNN
 F2 "" 50 -2050 50 H I C CNN
 F3 "" 50 -2050 50 H I C CNN
 DRAW
@@ -137,30 +156,11 @@ X COM6 9 -400 -400 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Power_Management:MAX40200AUK
+# power_GND
 #
-DEF Power_Management:MAX40200AUK U 0 40 Y Y 1 F N
-F0 "U" 150 -150 50 H V C CNN
-F1 "Power_Management:MAX40200AUK" 0 350 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Package_TO_SOT_SMD:SOT-23-5
-$ENDFPLIST
-DRAW
-S -200 300 200 -100 0 1 0 f
-X VDD 1 -300 200 100 R 50 50 1 1 W
-X GND 2 0 -200 100 U 50 50 1 1 W
-X EN 3 -300 100 100 R 50 50 1 1 I
-X OUT 5 300 200 100 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# power:GND
-#
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -169,11 +169,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:PWR_FLAG
+# power_PWR_FLAG
 #
-DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "power:PWR_FLAG" 0 150 50 H V C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

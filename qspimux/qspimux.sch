@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:qspimux-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -20,7 +20,7 @@ U 1 1 5B4D25B2
 P 5300 3300
 F 0 "U101" H 5550 2300 50  0000 C CNN
 F 1 "TS3A27518ERTWR" H 4850 2300 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24_1EP_3.9x3.9mm_Pitch0.5mm" H 5350 1250 50  0001 C CNN
+F 2 "qspimux-footprints:QFN-24_1EP_3.9x3.9mm_Pitch0.5mm" H 5350 1250 50  0001 C CNN
 F 3 "" H 5350 1250 50  0001 C CNN
 	1    5300 3300
 	1    0    0    -1  
@@ -384,7 +384,7 @@ connect flash to board if\nproggrammer is unconnected
 Text Notes 1100 1400 0    50   ~ 0
 assumption: VCC_BOARD is about the same as VCC_PROG an both are between 1.8V and 3.3v
 $Comp
-L Power_Management:MAX40200AUK U102
+L MAX40200:MAX40200AUK U102
 U 1 1 5B781CF7
 P 2300 5500
 F 0 "U102" H 2300 5965 50  0000 C CNN
@@ -395,7 +395,7 @@ F 3 "" H 2300 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Management:MAX40200AUK U103
+L MAX40200:MAX40200AUK U103
 U 1 1 5B781D59
 P 2300 6500
 F 0 "U103" H 2300 6965 50  0000 C CNN
