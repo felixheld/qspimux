@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name Mux)(type Legacy)(uri ${KIPRJMOD}/../qspimux-symbols/Mux.lib)(options "")(descr ""))
-  (lib (name MAX40200)(type Legacy)(uri C:/git/qspimux/qspimux-symbols/MAX40200.lib)(options "")(descr ""))
+  (lib (name MAX40200)(type Legacy)(uri ${KIPRJMOD}/../qspimux-symbols/MAX40200.lib)(options "")(descr ""))
 )
