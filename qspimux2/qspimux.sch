@@ -181,7 +181,7 @@ VCC_FLASH
 Text Label 7700 4100 0    50   ~ 0
 ~CS_BOARD
 Text Label 7700 4200 0    50   ~ 0
-IO0_DO_BOARD
+IO1_DO_BOARD
 Text Label 7700 4300 0    50   ~ 0
 IO2_~WP_BOARD
 Text Label 9400 4100 2    50   ~ 0
@@ -241,7 +241,7 @@ Wire Wire Line
 Text Label 6300 2800 2    50   ~ 0
 ~CS_BOARD
 Text Label 6300 3000 2    50   ~ 0
-IO0_DO_BOARD
+IO1_DO_BOARD
 Text Label 6300 3800 2    50   ~ 0
 IO2_~WP_BOARD
 Wire Wire Line
