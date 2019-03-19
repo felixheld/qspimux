@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../gerber/qspimux/"))
+      (outputdirectory "../gerber/qspimux2/"))
   )
 
   (net 0 "")
