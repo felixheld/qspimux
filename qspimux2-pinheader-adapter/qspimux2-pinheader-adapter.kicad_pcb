@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "../gerber/qspimux2-pinheader-adapter"))
   )
 
   (net 0 "")
@@ -415,7 +415,7 @@
   (segment (start 120.13 116.2) (end 121.25 115.08) (width 0.2) (layer F.Cu) (net 10))
   (segment (start 113.95 112.25) (end 112 112.25) (width 0.2) (layer F.Cu) (net 10))
 
-  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5C912484) (hatch edge 0.508)
+  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5C9CFAC1) (hatch edge 0.508)
     (connect_pads (clearance 0.15))
     (min_thickness 0.15)
     (fill yes (arc_segments 32) (thermal_gap 0.3) (thermal_bridge_width 0.3))
