@@ -157,7 +157,7 @@
     (add_net GND)
   )
 
-  (module qspimux-footprints:CLP-104-02-F-DH-A (layer F.Cu) (tedit 5C8954D1) (tstamp 5C898939)
+  (module qspimux-footprints:CLP-104-02-F-DH (layer F.Cu) (tedit 5C8954D1) (tstamp 5C898939)
     (at 94.25 50.25 180)
     (path /5B60D78F)
     (fp_text reference J102 (at 0 -3.81 180) (layer F.Fab)
@@ -195,7 +195,7 @@
       (net 1 GND))
   )
 
-  (module qspimux-footprints:FTSH-104-01-F-DH-A (layer F.Cu) (tedit 5C894E8F) (tstamp 5C897E89)
+  (module qspimux-footprints:FTSH-104-01-F-DH (layer F.Cu) (tedit 5C894E8F) (tstamp 5C897E89)
     (at 94.25 64.65 180)
     (path /5B60D7DE)
     (fp_text reference J103 (at 0 3.81 180) (layer F.Fab)
