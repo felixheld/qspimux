@@ -540,4 +540,6 @@ F 3 "" H 8800 2300 50  0001 C CNN
 	1    8800 2300
 	-1   0    0    1   
 $EndComp
+Text Notes 7050 3700 0    50   ~ 0
+the pin numbers of this connector are in reverse, since we're using a type A/type 1 flat flex cable\n(contacts on the same side), that connects the pins of the two connectors in reverse
 $EndSCHEMATC
