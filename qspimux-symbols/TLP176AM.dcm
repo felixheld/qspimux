@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLP176AM
+D Photorelay (MOSFET output, 1-form-a)
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=60600&prodName=TLP176AM
+$ENDCMP
+#
+#End Doc Library
