@@ -1,0 +1,156 @@
+EESchema Schematic File Version 5
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+$Comp
+L Device:LED D801
+U 1 1 5DFF541F
+P 5150 3000
+F 0 "D801" H 5143 2745 50  0000 C CNN
+F 1 "LED" H 5143 2836 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5150 3000 50  0001 C CNN
+F 3 "~" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D802
+U 1 1 5DFF8652
+P 5150 3500
+F 0 "D802" H 5143 3245 50  0000 C CNN
+F 1 "LED" H 5143 3336 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5150 3500 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0802
+U 1 1 5DFFCFD4
+P 5300 3500
+F 0 "#PWR0802" H 5300 3250 50  0001 C CNN
+F 1 "GND" H 5305 3327 50  0000 C CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0801
+U 1 1 5DFFC898
+P 5300 3000
+F 0 "#PWR0801" H 5300 2750 50  0001 C CNN
+F 1 "GND" H 5305 2827 50  0000 C CNN
+F 2 "" H 5300 3000 50  0001 C CNN
+F 3 "" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R802
+U 1 1 5E002503
+P 4650 3500
+F 0 "R802" V 4443 3500 50  0000 C CNN
+F 1 "1k" V 4534 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 3500 50  0001 C CNN
+F 3 "~" H 4650 3500 50  0001 C CNN
+	1    4650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R801
+U 1 1 5E0015B4
+P 4650 3000
+F 0 "R801" V 4443 3000 50  0000 C CNN
+F 1 "1k" V 4534 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 3000 50  0001 C CNN
+F 3 "~" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	0    1    1    0   
+$EndComp
+Text HLabel 3900 2900 0    50   Input ~ 0
+LED[0..2]
+$Comp
+L Device:R R803
+U 1 1 5DEB5645
+P 4650 4000
+F 0 "R803" V 4443 4000 50  0000 C CNN
+F 1 "1k" V 4534 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 4000 50  0001 C CNN
+F 3 "~" H 4650 4000 50  0001 C CNN
+	1    4650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D803
+U 1 1 5DEB5653
+P 5150 4000
+F 0 "D803" H 5143 3745 50  0000 C CNN
+F 1 "LED" H 5143 3836 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5150 4000 50  0001 C CNN
+F 3 "~" H 5150 4000 50  0001 C CNN
+	1    5150 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0803
+U 1 1 5DEB5660
+P 5300 4000
+F 0 "#PWR0803" H 5300 3750 50  0001 C CNN
+F 1 "GND" H 5305 3827 50  0000 C CNN
+F 2 "" H 5300 4000 50  0001 C CNN
+F 3 "" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	3900 2900 4000 2900
+Entry Wire Line
+	4000 2900 4100 3000
+Entry Wire Line
+	4000 3400 4100 3500
+Entry Wire Line
+	4000 3900 4100 4000
+Wire Wire Line
+	4100 3000 4500 3000
+Wire Wire Line
+	4100 3500 4500 3500
+Wire Wire Line
+	4100 4000 4500 4000
+Text Label 4100 3000 0    50   ~ 0
+LED0
+Text Label 4100 3500 0    50   ~ 0
+LED1
+Text Label 4100 4000 0    50   ~ 0
+LED2
+Wire Wire Line
+	4800 3000 5000 3000
+Wire Wire Line
+	4800 3500 5000 3500
+Wire Wire Line
+	4800 4000 5000 4000
+Text Label 4800 3000 0    50   ~ 0
+R0
+Text Label 4800 3500 0    50   ~ 0
+R1
+Text Label 4800 4000 0    50   ~ 0
+R2
+Wire Bus Line
+	4000 2900 4000 4000
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "qspimux_footprints")(type "KiCad")(uri "${KIPRJMOD}/../qspimux-footprints.pretty")(options "")(descr ""))
+)
