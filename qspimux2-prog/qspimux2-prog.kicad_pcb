@@ -838,7 +838,7 @@
     (fp_text reference "C604" (at 0 -1.17 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "C" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "220p" (at 0 1.17 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer "F.Fab") (width 0.1))
@@ -913,7 +913,7 @@
     (fp_text reference "R605" (at 0 -1.17 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "R" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "36k" (at 0 1.17 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer "F.Fab") (width 0.1))
@@ -947,7 +947,7 @@
     (fp_text reference "R604" (at 0 -1.17 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "R" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "24k" (at 0 1.17 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer "F.Fab") (width 0.1))
@@ -981,7 +981,7 @@
     (fp_text reference "R603" (at 0 -1.17 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "R" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "75k" (at 0 1.17 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer "F.Fab") (width 0.1))
