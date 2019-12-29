@@ -17,6 +17,9 @@ The **flash-adapter** can be plugged directly onto the **board-adapter** when th
 
 The DIP8 **board-adapter** can be used to plug a SPI flash on a **flash-adapter** board into a programmer with ZIF socket.
 
+**qspimux2-prog** is a programmer designed to work together with **qspimux2**. It supports both 1.8V and 3.3V signal levels and quad SPI mode, can control the qspimux2, provides a low voltage serial and I2C port, 4 potential-free outputs and 4 optocoupler inputs. It is connected to the host via USB.
+TODO: add link to firmware repository when the firmware is written.
+
 ## how to setup the hardware
 
 * If applicable, remove the flash from the mainboard; usually this works best when using a hot air rework station.
