@@ -36,6 +36,11 @@ If you wonder about the weird pin numbering in the schematics: KiCad didn't have
 
 ## design goals and decisions
 
+no emulation:
+* since it uses the real flash chip, it doesn't behave differently than the real flash chip, so an unmodified firmware image can be used.
+* design not very complex and relatively inexpensive
+* downsides: flashing takes some time and flashes are only guaranteed to survive a certain number of erase cycles. Since the guaranteed number of erase cycles is typically 100000, this shouldn't be a real limitation.
+
 minimal interference when the flash is connected to the mainboard:
 * analog mux has small propagation delay
 * no long cables to the mainboard or the flash chip
