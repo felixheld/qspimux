@@ -32,3 +32,15 @@ If the setup doesn't work as expected, please try to plug the flash adapter dire
 The two pin footprint on the flash adapter boards are for an optional capacitor near the flash chip. This capacitor is usually not needed, but in the case of a badly designed flash chip power supply on the target mainboard it might help to get the flash chip working reliable.
 
 If you wonder about the weird pin numbering in the schematics: KiCad didn't have symbols/footprints with the right numbering and I just connected everything in the way that the footprints match to the flash pinout.
+
+## design goals and decisions
+
+minimal interference when the flash is connected to the mainboard:
+* analog mux has small propagation delay
+* no long cables to the mainboard or the flash chip
+* connection to the programmer not connected to flash when it is connected to the board. Monitoring of flash accesses by the mainboard isn't possible with this though
+
+minimize chance of short circuits:
+* small board with castellated holes on two edges with a socket soldered on top instead of a pin header with long legs. SOIC8W adappter also works for WSON8
+* socket and not a pin header on the board adapter
+* only partially solved problem: the small connectors don't have mechanical keying. As a workaround there are flash adapters with added reverse polarity protection
