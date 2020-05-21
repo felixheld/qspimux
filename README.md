@@ -11,7 +11,7 @@ The full hardware design consists of three boards  that are stacked on top of ea
 * **flash-adapter** contains the SPI flash; there are currently adapters for flashes in SOIC8W and SOIC16W packages.
 * **qspimux** does the multiplexing of the SPI flash between the target board and the programmer and contains a connector to the programmer. This connector also contains the control signal that selects to which component the SPI flash is connected.
 * **qspimux2** is a redesign of **qspimux** that only has components on one side which heavily improves manufacturability.
-* **board-adapter** on the embedded system's mainboard. Currently there are board adapters for DIP8, SOIC8W and SOIC16W footprints; the SOIC8W one should also fit on a WSON8 footprint.
+* **board-adapter** on the embedded system's mainboard. Currently there are board adapters for DIP8, SOIC8W and SOIC16W footprints; the SOIC8W one should also fit on a WSON8 footprint. To improve solderability, the board adapter boards should be manufactured with either 0.6mm or 0.8mm thickness; using the usual 1.6mm might be cheaper, but makes it difficult to properly solder the adapter onto the mainboard.
 
 The **flash-adapter** can be plugged directly onto the **board-adapter** when the **qspimux** isn't needed.
 
